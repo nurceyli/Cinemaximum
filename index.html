@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.css">
+    <link rel="stylesheet" href="assets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Cinemaximum</title>
+</head>
+
+<body>
+    <!--HEADER-->
+    <nav class="site-header">
+        <div class="container">
+            <ul class="d-flex flex-row site-header-inner justify-content-between">
+                <li>
+                    <a href="index.html"><img src="./assets/images/header_img/cinemaximum_logo.svg" alt="Cinemaximum"></a>
+                </li>
+                <li class="px-2">
+                    <div class="dropdown show">
+                        <a class="btn dropdown-toggle d-flex menu-trans" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="menu-triline d-flex flex-column justify-content-between ms-1 me-3 py-1">
+                                <div class="top-line" style="width: 20px;height: 2px;background-color: black;"></div>
+                                <div style="width: 30px;height: 2px;background-color: black;"></div>
+                                <div class="btm-line" style="width: 10px;height: 2px;background-color: black;"></div>
+                            </div>
+                            <span>Menü</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <ul class="d-flex flex-row site-header-middle align-items-center">
+                        <li>Filmler</li>
+                        <li>Sinemalar</li>
+                        <li>
+                            <a href="">
+                                <img src="./assets/images/header_img/gold_class.png" alt="" height="90px" style="max-width: 162px;">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img src="./assets/images/header_img/movie_pass.png" alt="" height="40px" style="max-width: 36px;">
+                            </a>
+                        </li>
+                        <a href=""><i class="fa-solid fa-magnifying-glass" style="margin-left: 120px; color: black;"></i></a>
+                    </ul>
+                </li>
+                <li class="d-flex flex-row justify-content-evenly site-header-right">
+                    <a href="" class="btn shadow butn1">
+                        <span>Üye Ol</span>
+                    </a>
+                    <a href="" class="btn butn2 shadow mx-2">
+                        <span>Giriş Yap</span>
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/header_img/cgv_icon.svg" alt="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!--SLİDER-->
+    <main class="container">
+        <section class="d-flex flex-row information justify-content-between align-items-center" style="padding-top: 60px;">
+            <div class="flex-column information-left">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Vizyonda</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Yakında</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                </div>
+            </div>
+            <div class="flex-column information-right">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Vizyon Tarihi</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Puan</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
+                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                </div>
+            </div>
+        </section>
+        <section class="d-flex flex-row mt-5">
+            <div class="flex-column col-3" style="padding-right: 25px;">
+                <div class="vote">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Sinema Seç</option>
+                    <option value="1">İstanbul Anadolu</option>
+                    <option value="2">İstanbul Avrupa</option>
+                    <option value="3">Ankara</option>
+                    <option value="4">İzmir</option>
+                    <option value="5">Tekirdağ</option>
+                    <option value="6">Kars</option>
+                    <option value="7">Bursa</option>
+                    <option value="8">Edirne</option>
+                  </select>
+                </div>
+                <div class="vote">
+                    <span>Ayrıcalıklı Salonlar</span><br>
+                    <p>Birden fazla seçim yapabilirsin</p>
+                    <div class="row mt-4">
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/4dx.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/d-box.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/gold-class.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/imax.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/platinum-screen-x.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/sky-auditorium.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/tempur.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/premium-cinema.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/mpx.png" alt="" class="vote-img"></a>
+                        <a href="" class="col-6 vote-a"><img src="./assets/images/movie_icon/skybox.png" alt="" class="vote-img"></a>
+                    </div>
+                </div>
+                <div class="vote">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Format Seç</option>
+                    <option value="1">2D</option>
+                    <option value="2">3D</option>
+                  </select>
+                </div>
+                <div class="vote">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Dil Seç</option>
+                    <option value="1">Dublajlı</option>
+                    <option value="2">Orijinal Versiyon</option>
+                    <option value="3">Altyazılı</option>
+                  </select>
+                </div>
+                <div class="vote">
+                    <select class="form-select" aria-label="Default select example">
+                    <option selected>Tür Seç</option>
+                    <option value="1">Aile</option>
+                    <option value="2">Aksiyon</option>
+                    <option value="4">Belgesel</option>
+                    <option value="5">Bilim Kurgu</option>
+                    <option value="6">Dram</option>
+                    <option value="7">Gerilim</option>
+                    <option value="8">Korku</option>
+                    <option value="9">Komedi</option>
+                    <option value="10">Macera</option>
+                    <option value="11">Polisiye</option>
+                    <option value="12">Romantik</option>
+                    <option value="13">Savaç</option>
+                    <option value="14">Suç</option>
+                  </select>
+                </div>
+                <div class="mt-4 text-center">
+                    <button type="submit" class="btn filter-btn btn-full">Filtrele</button>
+                </div>
+                <div class="mt-3 text-center">
+                    <a href="" class="filter-reset">Filtreyi Temizle</a>
+                </div>
+            </div>
+            <div class="flex-column col-9">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/detay/the-menu.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/sky-auditorium.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 4.5
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">The Menu</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/run_gercek.jpg" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/tempur.png" alt="" height="20px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 5.5
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Gizli Gerçek</p>
+                    </div>
+                    <div class="col-4">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/sadece-bir-gece.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/sky-auditorium.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 6.2
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Sadece Bir Gece</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/bir-tutam-aclik.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/imax.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 7.8
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Bir Tutam Açlık</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/malazgirt-1071.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/platinum-screen-x.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 9.0
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Malazgirt 1071</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/moonfall.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/d-box.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 3.0
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Moonfall</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/dilberay.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/4dx.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 5.6
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Dilberay</p>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/kesisme-iyi-ki-varsin-eren.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/4dx.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 9.5
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Kesişme: İyi ki Varsın Eren</p>
+                    </div>
+
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/cyrano.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/sky-auditorium.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 5.0
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Cyrano</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/mavzer.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/tempur.png" alt="" height="20px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 6.0
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Mavzer</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/nilde-olum.png" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/d-box.png" alt="" height="15px"></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 5.0
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">Nil'de Ölüm</p>
+                    </div>
+                    <div class="col-4 mt-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="./assets/images/slider_img/TheBatman.jpg" class="card-img-top" alt="...">
+                            <div class="overlay">
+                                <ul class="movie-type">
+                                    <li><img src="./assets/images/movie_icon/gold-class.png" alt=""></li>
+                                    <li><img src="./assets/images/movie_icon/sky-auditorium.png" alt=""></li>
+                                </ul>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i> 7.5
+                                </div>
+                                <div class="movie-star">
+                                    <i class="fa-solid fa-star"></i>
+                                </div>
+                                <a href="detail.html" target="_blank" class="btn btn-group-sm rounded">İncele</a>
+                            </div>
+                        </div>
+                        <p class="text-center mt-3">The Batman</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer class="footer">
+        <section class="container">
+            <div class="social">
+                <h6>Bizi Takip Et</h6>
+                <ul>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-foursquare"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="d-flex flex-row">
+                <div class="col-8 footer-left">
+                    <div class="d-flex flex-row">
+                        <ul class="flex-column">
+                            <li>
+                                <a href="">Vizyonda</a>
+                            </li>
+                            <li>
+                                <a href="">Yakında</a>
+                            </li>
+                            <li>
+                                <a href="">Sinemalar</a>
+                            </li>
+                            <li>
+                                <a href="">CGV Arthouse</a>
+                            </li>
+                            <li>
+                                <a href="">CGV Cinema Club</a>
+                            </li>
+                            <li>
+                                <a href="">Ayrıcalıklı Salonlar</a>
+                            </li>
+                            <li>
+                                <a href="">Kampanyalar</a>
+                            </li>
+                            <li>
+                                <a href="">Özel Etkinlik Talepleri</a>
+                            </li>
+                        </ul>
+                        <ul class="flex-column">
+                            <li>
+                                <a href="">E-Bilet</a>
+                            </li>
+                            <li>
+                                <a href="">İade İşlemleri</a>
+                            </li>
+                            <li>
+                                <a href="">MoviePass İade İşlemleri</a>
+                            </li>
+                            <li>
+                                <a href="">İnsan Kaynakları</a>
+                            </li>
+                            <li>
+                                <a href="">Sıkça Sorulan Sorular</a>
+                            </li>
+                            <li>
+                                <a href="">İşlem Rehberi</a>
+                            </li>
+                            <li>
+                                <a href="">Hakkımızda</a>
+                            </li>
+                            <li>
+                                <a href="">Yorum ve Öneriler</a>
+                            </li>
+                        </ul>
+                        <ul class="flex-column">
+                            <li>
+                                <a href="">KVK Aydınlatma Bildirimi</a>
+                            </li>
+                            <li>
+                                <a href="">Kamera Sistemleri Bildirimi</a>
+                            </li>
+                            <li>
+                                <a href="">KVKK Basvuru Formu</a>
+                            </li>
+                            <li>
+                                <a href="">KVK Politikasi</a>
+                            </li>
+                            <li>
+                                <a href="">İletişim</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-4 footer-right">
+                    <ul>
+                        <li>
+                            <a href="">Gizlilik</a>
+                        </li>
+                        <li>
+                            <a href="">Kullanım Koşulları</a>
+                        </li>
+                        <li>
+                            <a href="">Mesafeli Bilet Satış Sözleşmesi</a>
+                        </li>
+                    </ul>
+                    <div class="copyright">
+                        Reklam vermek için: <a href="http://www.marsmedia.com.tr" target="_blank">www.suleymanyildirim.com</a><br> © Copyright 2022
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
